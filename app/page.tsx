@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardSwap } from "../components/CardSwap";
+import logo from "../public/assets/logo.png";
 import styles from "./page.module.css";
 
 const services = [
@@ -83,7 +84,7 @@ export default function Home() {
           <div className={styles.heroVisual} aria-hidden="true">
             <div className={styles.heroLogoWrap}>
               <Image
-                src="/assets/logo.png"
+                src={logo}
                 alt=""
                 fill
                 className={styles.heroLogo}
@@ -222,7 +223,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerLogoWrap}>
           <Image
-            src="/assets/logo.png"
+            src={logo}
             alt=""
             width={200}
             height={72}
